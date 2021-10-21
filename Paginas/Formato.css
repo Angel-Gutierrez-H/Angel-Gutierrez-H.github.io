@@ -1,0 +1,79 @@
+p{
+    font-family: fantasy;
+}
+
+h1{
+    font-weight: 300;
+    color: brown;
+    background-color: coral;
+    text-align: center;
+    text-shadow: 7px 4px 2px rgb(176, 176, 236);
+}
+
+#ellorem{
+    width: 300px;
+    
+}
+#imagenarbol{
+   border: 10px solid blue;
+    margin: 100px;
+   padding: 10%;
+    background-color: lightsalmon;
+    border: 30px 50px rgb(34, 11, 3);
+}
+
+#tablita{
+    caption-side: bottom;
+    background-color: aquamarine;
+    border-collapse: collapse;
+    color: blue;
+    
+
+}
+div.cambiacursor{
+cursor:ns-resize
+}
+    
+
+table:hover#tablita{
+    color:#fff;
+    background-color: blue;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid green;
+    font-family: sans-serif;
+}
+#cabeceratabla{
+    padding: 10%;
+    background-color: chartreuse;
+}
+a:hover.sobre{
+    color:#fff;
+    background-color: blue;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid green;
+    font-family: sans-serif;
+}
+a:visited.sobre{
+    color: green;
+}
+td{
+    text-align: left;
+    padding: 1;
+    border: 1px solid #000 ;
+}
+.morado{
+    background-color: rgb(176, 176, 245);
+    
+}
+
+li.ok{list-style-type: circle;
+}
+
+ul.tipospincel {
+    
+   list-style-type: none;
+   list-style-position: inside;
+   list-style-image: url("../imagenes/piedra.jpg");
+}
