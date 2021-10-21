@@ -1,0 +1,216 @@
+<!DOCTYPE html><!--Lo primero siempre en un documento html!--
+Declaración de documento HTML5-->
+
+<html lang="es"><!--Solo el Doctype estará fuera de html-->
+					<!-- dos elementos Head y Body-->
+ 
+<head>					
+ 
+	 <meta charset="UTF-8"><!--Declaración de codificación de caracteres-->
+    <title>Mi primera pagn  </title>
+    <link  href="Paginas/Formato.css" rel="stylesheet"/>
+
+</head>     
+
+<body>
+        <h1>  primera ppppagina  </h1>
+        
+        <div id="CajaParaJava"></div>
+        
+        
+        <!-- <hr> cambio de tema entre párrafos. Antes ponía una línea. -->
+        <hr> 
+        Aunque todavia es sencilla, ya veras tu que guay
+
+        <p>Esto es  que sale por ahora
+        <p>Lorem ipsum dolor sit  <b>amet consectetur</b> <!--el <b> es bold (negrita)-->
+          
+            <!--<br> establece un retorno de carro. Útil en poemas.-->
+            <br> elit. Eos amet quia repellat alias corporis, error illum harum laborum atque.</br> Necessitatibus repudiandae eaque sequi molestiae quidem animi, molestias numquam veniam neque. </p>
+
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quam.</blockquote>
+             <a name="marca" id="marca"></a>
+            <!--Lista desordenada. Si fuera <ol> sería una lista a la que añade números-->
+               
+               
+                <li class="ok"><b>mamiferos</b> </li>
+                   <ol> 
+                       <li>sardina</li>
+                       <li>bacalao</li>
+                   </ol>
+                   
+
+                <li class="ok"><b>teleosteros</b> </li>
+                    <ol> 
+                        <li>ornitorrinco</li>
+                        <li>platelminto</li>
+                    </ol>
+                   
+                <li class="ok"><b>galimatias</b>
+                     <ol> 
+                        <li><b>che cosa 3</b> </li>
+                    </ol>
+                </li>   
+
+
+         
+             
+               <ul class="tipospincel">
+                <li>Planos</li>
+                <li>Redondos</li>
+                <li>Lengua de gato</li>
+               </ul> 
+            
+               
+               
+            <dl> <!--Es una lista de definiciones,
+                    contiene <dt> que es la cosa a definir y
+                    contiene <dd> que es la definición de esta cosa-->
+                <dt>hay una casa</dt>
+                    <dd>y es una casa gris</dd>
+                    <dd>ademas es beige</dd>
+            </dl>
+
+
+            <!-- <a>(Anchor) Sirve para colocar un hiperenlace-->
+            <a class="sobre" href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML"title="Pasen y vean señores" > Ir a como insertar imagenes</a>
+            <img id="imagenarbol" src= "imagenes\arboles.jpg" height="150px" width="50px" alt="no ce ve"  >
+
+                <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML"><img src="imagenes\arboles.jpg" /> </a>
+            
+            <!-- href="#...." va a establecer un enlace a la propia página-->   
+            <a href="#marca">ir a sardinas</a>
+        <nav>       
+            <ul>
+                <li><a href="Paginas/Pictures.html">Pictures></a></li>
+                <li><a href="Paginas/Home.html">Home></a></li>
+            </ul>
+        </nav> 
+            <a href="mailto:nowhere@mozilla.org">Enviar correo electrónico</a>
+             <!--<abbr> Subraya la palabra elegida. (abajo es Rev)-->   
+            <p>Creo que el <abbr title="Reverendo">Rev.</abbr> Green lo hizo en la cocina con la motosierra.</p>
+  
+            <!-- <address> Envuelve tus datos de contacto-->
+    <div class="cambiacursor">          
+    <table id="tablita">
+        <caption>"Los Dinosaurios del oeste"</caption>
+
+        <thead id="cabeceratabla"> <!--<thead> es la cabecera de la tabla-->
+            <tr> <!--<tr> es la fila-->
+            
+             <th>-</th>
+             <th>Lunes</th> <!--<th> es el encabezado de una columna-->
+             <th>Martes</th>
+             <th>Miércoles</th>
+             <th>Jueves</th>
+             <th>Viernes</th>
+            
+            </tr>
+
+        </thead>
+           
+              
+        <tbody"> <!--<Tbody> da formato al cuerpo de la tabla-->
+            <tr> 
+           <td class="morado">De 9 a 10</td>
+            <td>Matemáticas</td><!--<td> es la columna-->
+            <td rowspan="2">Ciencia</td><!--<Rowspan> une dos o más filas 
+               <Colspan> une dos o más columnas -->
+            <td>Lenguaje, lengua, lengua, matracas,etc</td>
+            <td>Química</td>
+            <td>Arte</td>    
+         </tr>
+         <tr>
+            <td>De 10 a 11</td>
+            <td>Lenguaje</td>
+            <td>Ciencia</td>
+            <td>Arte</td>   
+            <td>Química</td>
+           
+         </tr>
+
+         <tr>
+            <td>De 11 a 12</td>
+            <td>Química</td>
+            <td>Ciencia</td>
+            <td>Arte</td>   
+            <td>Lenguaje</td>
+            <td>Literatura</td>
+
+
+
+         </tr>
+        </tbody>   
+
+        <tfoot id="PieTabla">
+            <td>Suma 1</td>
+            <td>Suma 2</td>
+            <td>Suma 3</td>
+            <td>Suma 4</td>   
+            <td>Suma 5</td>
+            <td>Suma 6</td>
+
+
+        </tfoot>
+       
+    </table>  
+    </div>
+
+ <!--<div> funciona como un contenedor de bloque-->     
+<div id="bloque en rojo" style="background-color: aqua;">  
+<form name="Formulario de prueba"> <!--name es el nombre del formulario o del campo-->
+   
+<!--Formularios que utilizan la etiqueta <input>-->
+  
+	<p>
+		<label for="namee"> Nombre(obligatorio)</label>
+		<input type="text" name="namee" id="namee"
+		placeholder="= Jose Perez"
+		autofocus
+		autocomplete
+		required>
+	</p><footer></footer>
+
+	Nombre:<input name="Nombre" type="text"/> <br/> <br/>
+    Email:<input name="email" type="email"/> <br/> <br/>
+    Contraseña:<input name="Contraseña" type="password"> <br/> <br/>
+    Casilla Verif:<input name="CasVerificacion" type="checkbox"> <br/> <br/>
+    Casilla Selecc:<input name="CasSeleccion" type="radio"/> <br/> <br/>
+    Seleccionar archivo:<input name="Selec.Archivo" type="file"> <br/> <br/>
+    Botón de envio<input name="BotonEnvio" type="submit"/> <br/> <br/>
+    
+<!--Formularios que no utilizan la etiqueta <input>-->
+    Elige un color:<select name="Combo" multiple> <!--multiple permite elegir varias opciones-->
+                                                  <!--Si no lleva <multiple> el combo es desplegable-->
+        <option>Blanco</option>
+        <option>Gris</option>
+        <option>Negro brillante</option>
+        <option>Azul</option>
+        <option>Rosa</option>
+
+    </select><br/> <br/>
+
+    <textarea name="mensaje"></textarea> </form> <br/> <br/>
+  
+
+</form>
+</div>    
+
+<!--<span> selecciona  una parte de un texto-->
+<p id="ellorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: azure; color: blue; "> Aspernatur libero tempora optio labore error nostrum odio sit modi! Ex eveniet doloremque dolorem </span>odio veniam impedit fugit, earum commodi obcaecati sapiente?</p>
+    
+<!--Atributos id y class sirven para identificar elementos html. 
+id selecciona un elemento
+class selecciona varios elementos-->
+
+<footer>
+    <address>
+        <p>Ángel g <br>
+           calle jo que lejos <br>
+       </p>  
+    </address>
+</footer>
+
+</body>
+
+</html>
